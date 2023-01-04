@@ -66,7 +66,7 @@ const handlesubmit=async(e)=>{
    chatcontainer.scrollTop=chatcontainer.scrollHeight;
    const messagediv=document.getElementById(uniqueid);
    loader(messagediv);
-  const response =await fetch('http://localhost:3000',{
+  const response =await fetch('https://fastcodex.onrender.com/',{
     method:'POST',
     headers:{
       'Content-Type':'application/json'
@@ -97,3 +97,5 @@ form.addEventListener('keyup',(e)=>{
     handlesubmit(e);
   }
 })
+
+
